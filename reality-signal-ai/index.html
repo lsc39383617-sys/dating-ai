@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REALITY SIGNAL AI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <header class="topbar">
+    <div class="logo">
+      REALITY <span>SIGNAL</span> AI
+    </div>
+
+    <div class="status">
+      실시간 관계 심리 분석 시스템
+    </div>
+  </header>
+
+  <section class="hero">
+
+    <div class="hero-left">
+
+      <div class="badge">
+        현실 연애 분석 AI
+      </div>
+
+      <h1 class="main-title">
+        감정이 아니라<br>
+        <span>관계 구조</span>를 분석한다
+      </h1>
+
+      <p class="sub">
+        읽씹 / 썸붕 / 연락 텀 변화 / 재회 가능성까지
+        현실적인 행동 전략 중심으로 분석합니다.
+      </p>
+
+      <div class="stats">
+
+        <div class="stat-card">
+          <div class="stat-number">87%</div>
+          <div class="stat-label">연락 흐름 분석 정확도</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">3.2x</div>
+          <div class="stat-label">사용자 평균 체류시간</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">REAL</div>
+          <div class="stat-label">무지성 희망고문 제거</div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="hero-right">
+
+      <div class="preview-card">
+
+        <div class="preview-header">
+          <div>실시간 분석 예시</div>
+          <div class="live">● LIVE</div>
+        </div>
+
+        <div class="preview-content">
+
+          <div class="user-msg">
+            원래는 먼저 연락 자주 왔는데 최근엔 답장도 느리고 약속도 미루는 느낌이에요.
+          </div>
+
+          <div class="ai-msg">
+            현재 관계는 관심 하락 초기 단계 가능성이 높음.
+            특히 약속 회피 + 텐션 감소가 같이 나오고 있음.
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="main-panel">
+
+    <div class="input-card">
+
+      <div class="card-title">
+        관계 흐름 입력
+      </div>
+
+      <div class="card-sub">
+        카톡 흐름, 썸 변화, 재회 상황 등을 입력하세요.
+      </div>
+
+      <textarea id="userInput" placeholder="현재 상황을 입력하세요"></textarea>
+
+      <div class="action-row">
+
+        <div class="hint">
+          상대 심리 / 관계 가능성 / 추천 행동 전략 분석
+        </div>
+
+        <button onclick="analyzeRelationship()">
+          AI 현실 분석 시작
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="result-card">
+
+      <div class="result-title">
+        분석 결과
+      </div>
+
+      <div id="loading" class="loading">
+        AI가 관계 흐름을 분석 중입니다...
+      </div>
+
+      <div id="result" class="result">
+        아직 분석 결과가 없습니다.
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
